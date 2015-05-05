@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<link href="style.css" rel="stylesheet" type="text/css" />
+<{$xoops_module_header}>
+
+<script language="JavaScript">
+<!--
+
+function SymError()
+{
+  return true;
+}
+
+window.onerror = SymError;
+
+var SymRealWinOpen = window.open;
+
+function SymWinOpen(url, name, attributes)
+{
+  return (new Object());
+}
+
+window.open = SymWinOpen;
+
+//-->
+</script>
+
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<TABLE WIDTH=677 BORDER=0 CELLPADDING=0 CELLSPACING=0  >
+	<TR>
+		<TD ROWSPAN=2 background="http://www.xoopsdesign.com/themes/xoopsdesign/top.jpg" WIDTH=215 HEIGHT=228 ALT="" valign="top" style="background-position:top; background-repeat:no-repeat ">
+		<div style="padding-top:105px; padding-left:10px; color: #FFFFFF;">• High quality XOOPS <br />
+		  &nbsp;&nbsp;custom themes </div>
+		<div style="padding-top:0px; padding-left:10px; color: #FFFFFF;">• Affordable prices </div>
+		<div style="padding-top:0px; padding-left:10px; color: #FFFFFF;">• XOOPS consultancy </div>
+		<div style="padding-top:10px; padding-left:100px"><a href="http://www.xoopsdesign.com/register.php" target="_self"><img src="<{$xoops_imageurl}>join.jpg" border="0"></a></div>		</TD>
+		<TD COLSPAN=2><img src="<{$xoops_imageurl}>top1.jpg"  WIDTH=462 HEIGHT=73 ></TD>
+	</TR>
+	<TR>
+		<TD>	  <img src="<{$xoops_imageurl}>top_im.jpg" width="300" height="155" /></TD>
+		<TD background="http://www.xoopsdesign.com/themes/xoopsdesign/top2.jpg" WIDTH=162 HEIGHT=155 ALT=""></TD>
+	</TR>
+</TABLE>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" id="okvir">
+  <tr>
+    <td>
+      <table border="0" cellpadding="0" cellspacing="0" class="glavna">
+        <td id="leftcolumn"> 
+          <!-- Start left blocks loop -->
+          <{foreach item=block from=$xoops_lblocks}> <div class="<{cycle values="blockTitle"}>"><{$block.title}></div>
+          <div class="blockContent"><{$block.content}></div>
+		  <img src="<{$xoops_imageurl}>images/160.gif" width="215" height="1" alt="" />
+          <{/foreach}> 
+          <!-- End left blocks loop -->
+          <br /> 
+          <br />
+          </td>
+        <td id="centercolumn"> 
+          <!-- Display center blocks if any -->
+          <{if $xoops_showcblock == 1}> <{/if}> 
+          <!-- End display center blocks -->
+          <div id="content"> <{$xoops_contents}> </div>
+          <br /> <table class="sadrzaj" cellspacing="0">
+            <tr>
+              <td id="centerCcolumn" colspan="2">
+                <!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}>
+      <table align="center" cellpadding="0" cellspacing="2">
+        <tr>
+          <td>
+            <div class="blockTitle"><{$block.title}></div>
+            <div class="blockContent"><{$block.content}></div></td>
+        </tr>
+      </table>
+<{/foreach}>
+      <!-- End center-center blocks loop -->
+              </td>
+            </tr>
+            <tr>
+              <td id="centerLcolumn">
+                <!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}>
+      <table class="blok" align="center" cellpadding="3" cellspacing="2">
+        <tr>
+          <td>
+            <div class="blockTitle"><{$block.title}></div>
+            <div class="blockContent"><{$block.content}></div></td>
+        </tr>
+      </table>
+<{/foreach}>
+      <!-- End center-left blocks loop -->
+              </td>
+              <td id="centerRcolumn">
+                <!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}>
+      <table class="blok" align="center" cellpadding="3" cellspacing="2">
+        <tr>
+          <td>
+            <div class="blockTitle"><{$block.title}></div>
+            <div class="blockContent"><{$block.content}></div></td>
+        </tr>
+      </table>
+<{/foreach}>
+      <!-- End center-right blocks loop -->
+              </td>
+            </tr>
+          </table>          <br /> <br /> </td>
+        <{if $xoops_showrblock == 1}> 
+        <td id="rightcolumn"> 
+          <!-- Start right blocks loop -->
+          <{foreach item=block from=$xoops_rblocks}> <div class="<{cycle values="blockTitle,blockTitle"}>"><{$block.title}></div>
+          <div class="blockContent"><{$block.content}></div>
+		  <img src="<{$xoops_imageurl}>images/160.gif" width="160" height="1" alt="" />
+          <{/foreach}> 
+          <!-- End right blocks loop -->
+          <br /> <br /> </td>
+        <{/if}> </tr>
+        <tr> 
+          <td colspan="3"></td>
+        </tr>
+    </table> </td>
+  </tr>
+</table>
+<table width="677"  border="0" cellpadding="0" cellspacing="0" class="dole">
+              <tr>
+                <td><div class="privatnost"><br />
+                        <!-- Start Custom Links  /  Edit or remove next line -->
+        Copyright © 2005 <a href="<{$xoops_url}>" target="_self">XOOPS Design</a><br />
+        <br />
+                </div></td>
+              </tr>
+            </table>
+</body>
+</html>
+
+<script language="JavaScript">
+<!--
+var SymRealOnLoad;
+var SymRealOnUnload;
+
+function SymOnUnload()
+{
+  window.open = SymWinOpen;
+  if(SymRealOnUnload != null)
+     SymRealOnUnload();
+}
+
+function SymOnLoad()
+{
+  if(SymRealOnLoad != null)
+     SymRealOnLoad();
+  window.open = SymRealWinOpen;
+  SymRealOnUnload = window.onunload;
+  window.onunload = SymOnUnload;
+}
+
+SymRealOnLoad = window.onload;
+window.onload = SymOnLoad;
+
+//-->
+</script>
+
